@@ -9,15 +9,25 @@
 ---
 
 ## 📋 Table of Contents
-- [Features](#-features)
-- [Requirements](#-requirements)
-- [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Endpoints](#-endpoints)
-- [Usage Examples](#-usage-examples)
-- [API Responses](#-api-responses)
-- [Contribution](#-contribution)
-- [License](#-license)
+- [Tasks API](#tasks-api)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [✨ Features](#-features)
+  - [📦 Requirements](#-requirements)
+  - [🛠 Installation](#-installation)
+    - [1. Clone the repository](#1-clone-the-repository)
+    - [2. Install dependencies](#2-install-dependencies)
+    - [3. Run the API locally](#3-run-the-api-locally)
+  - [📂 Project Structure](#-project-structure)
+  - [🚀 Endpoints](#-endpoints)
+  - [📌 Usage Examples](#-usage-examples)
+    - [List all tasks](#list-all-tasks)
+    - [Create a task](#create-a-task)
+    - [Get a task by ID](#get-a-task-by-id)
+    - [Update a task (partial)](#update-a-task-partial)
+    - [Delete a task](#delete-a-task)
+  - [📜 API Responses](#-api-responses)
+  - [🤝 Contribution](#-contribution)
+  - [📄 License](#-license)
 
 ---
 
@@ -48,9 +58,10 @@ cd tasks-api
 
 ### 2. Install dependencies
 ```bash
-pip install -r requirements.txt
+pip install "fastapi[standard]"
+pip install "sqlalchemy[aiosqlite]"
+
 ```
-*(If `requirements.txt` doesn’t exist, generate it with `pip freeze > requirements.txt`)*
 
 ### 3. Run the API locally
 ```bash
